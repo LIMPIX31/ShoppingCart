@@ -23,7 +23,8 @@ export const OrderItem: FC<OrderItemProps> = ({
   return <div className={s.item}>
     <div className={s.deleteandimage}>
       <img className={s.delete}
-           src={'https://cdn-icons.flaticon.com/png/512/3687/premium/3687412.png?token=exp=1645171830~hmac=3bd0a25a7cc4da658d29623c8959105a'}
+           alt={''}
+           src={'https://cdn.iconscout.com/icon/premium/png-256-thumb/delete-52-103683.png'}
            onClick={onDelete} />
       <div className={s.image} />
     </div>
