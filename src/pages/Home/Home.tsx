@@ -18,7 +18,7 @@ export const HomePage: FC = () => {
     <div className={s.wrapper}>
       <div className={s.products}>
         <div className={s.cart}>
-          <div>Корзина (${products.length})</div>
+          <div>Корзина ({products.length})</div>
           <div>Наименование</div>
           <div>Цена</div>
           <div>Количество</div>
