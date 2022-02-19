@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+
 /***
     The new CSS reset - version 1.4.9 (last updated 11.2.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -78,4 +81,11 @@ meter {
 html, body, #div {
   width: 100% !important;
   height: 100% !important;
+}
+
+hr{
+  width: 80%;
+  height: 1px;
+  background-color: #c9c9c9;
+  margin: 5px 0;
 }
