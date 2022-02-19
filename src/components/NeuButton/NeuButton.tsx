@@ -3,11 +3,12 @@ import s from './NeuButton.module.scss'
 
 export type NeuButtonProps = {
   label: string,
-  onClick?: () => void
+  onClick?: () => void,
+  disabled?: boolean
 }
 
-export const NeuButton: FC<NeuButtonProps> = ({ label, onClick }) => {
-  return <button className={s.button}>
+export const NeuButton: FC<NeuButtonProps> = ({ label, onClick, disabled = false }) => {
+  return <button className={s.button} disabled={disabled}>
     {label}
   </button>
 }
