@@ -4,11 +4,11 @@ import { Product } from '../models/Product.model'
 export const cartApi = createApi({
   reducerPath: 'cartApi',
   baseQuery: fetchBaseQuery({ baseUrl: '/' }),
-  endpoints: (build) => ({
+  endpoints: build => ({
     getProducts: build.query<Product[], void>({
-      query: () => `db.json`
-    })
-  })
+      query: () => `db.json`,
+    }),
+  }),
 })
 
 export const { useGetProductsQuery } = cartApi

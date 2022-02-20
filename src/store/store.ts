@@ -5,15 +5,17 @@ import { cartApi } from './apis/cartApi'
 export const store = configureStore({
   reducer: {
     cart: cartSlice.reducer,
-    [cartApi.reducerPath]: cartApi.reducer
+    [cartApi.reducerPath]: cartApi.reducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(cartApi.middleware)
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware().concat(cartApi.middleware),
 })
 
 export type AppDispatch = typeof store.dispatch
 export type RootState = ReturnType<typeof store.getState>
-export type AppThunk<ReturnType = void> = ThunkAction<ReturnType,
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
   RootState,
   unknown,
-  Action<string>>
+  Action<string>
+>

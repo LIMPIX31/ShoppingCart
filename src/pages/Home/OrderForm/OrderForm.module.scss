@@ -1,24 +1,14 @@
-.orderForm {
-  width: 400px;
-  height: 300px;
-  border-radius: 50px;
-  background: #e0e0e0;
-  box-shadow: 8px 8px 16px #d5d5d5,
-  -8px -8px 16px #ebebeb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: Rubik, sans-serif;
-  .title{
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-  }
-  .totalPrice{
-    width: 100%;
-    padding-left: 40px;
-    padding-top: 20px;
-    flex-grow: 1;
-  }
+.button {
+  margin-top: 20px;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.totalPrice {
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 20px;
+  flex-grow: 1;
 }

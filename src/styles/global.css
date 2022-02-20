@@ -23,12 +23,15 @@
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a, button {
+a,
+button {
   cursor: revert;
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol,
+ul,
+menu {
   list-style: none;
 }
 
@@ -74,16 +77,18 @@ meter {
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable="true"]) {
+:where([draggable='true']) {
   -webkit-user-drag: element;
 }
 
-html, body, #div {
+html,
+body,
+#div {
   width: 100% !important;
   height: 100% !important;
 }
 
-hr{
+hr {
   width: 80%;
   height: 1px;
   background-color: #c9c9c9;
