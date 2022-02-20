@@ -2,21 +2,25 @@
   {
     "id": 0,
     "name": "Товар 1",
-    "price": 1299
+    "price": 1299,
+    "inStock": 23
   },
   {
     "id": 1,
     "name": "Товар 2",
-    "price": 149
+    "price": 149,
+    "inStock": 5
   },
   {
     "id": 2,
     "name": "Товар 3",
-    "price": 9500
+    "price": 9500,
+    "inStock": 1854
   },
   {
     "id": 3,
     "name": "Товар 4",
-    "price": 499
+    "price": 499,
+    "inStock": 30
   }
 ]

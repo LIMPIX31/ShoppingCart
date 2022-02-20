@@ -25,7 +25,10 @@ export const cartSlice = createSlice({
       action: PayloadAction<{ id: number; q: number }>
     ) => {
       const index = state.products.findIndex(v => v.id === action.payload.id)
-      state.products[index].quantity = action.payload.q
+      state.products[index].quantity = Math.max(
+        Math.min(action.payload.q, state.products[index].inStock),
+        1
+      )
     },
   },
   extraReducers: build => {

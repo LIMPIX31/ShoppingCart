@@ -30,6 +30,7 @@ export const AddToCart: FC = () => {
               price,
               name,
               quantity,
+              inStock: 1000,
             })
           )
           setSubmitting(false)
