@@ -26,12 +26,13 @@ export const HomePage: FC = () => {
             <div>Цена</div>
             <div>Количество</div>
           </div>
-          <div className={s.list}>
-            {products.map(v => (
+          <div className={s.list} data-testid={'list'}>
+            {products.map((v, i) => (
               <OrderItem
                 productName={v.name}
                 quantity={v.quantity || 1}
                 price={v.price}
+                key={i}
                 onQuantityChange={value => {
                   dispatch(
                     setQuantityById({

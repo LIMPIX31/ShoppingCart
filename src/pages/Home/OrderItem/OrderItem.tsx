@@ -22,7 +22,7 @@ export const OrderItem: FC<OrderItemProps> = ({
       <div className={s.deleteandimage}>
         <img
           className={s.delete}
-          alt={''}
+          alt={'delete'}
           src={
             'https://cdn.iconscout.com/icon/premium/png-256-thumb/delete-52-103683.png'
           }
